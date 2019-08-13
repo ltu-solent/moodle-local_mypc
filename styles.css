@@ -1,0 +1,48 @@
+#mypc_availability{
+	padding-top: 10px;
+	font-size: 14px;
+}
+
+#mypc_table {
+	width: 100% !important;
+}
+
+th{
+  text-align: left !important;
+}
+
+th, td{
+  padding: 5px !important;
+}
+
+.spinner {
+  font-size: 50px !important;
+  margin-left: 45%;
+  margin-top: 40%;
+}
+
+@media (max-width: 575px) {
+	.spinner {
+	  margin-top: 0 !important;
+	}
+}
+
+p{
+  padding: 5px 0 !important;
+}
+
+tr{
+  border-bottom: 1px solid #eee;
+}
+
+td.mypc_availability, th.mypc_availability{
+  text-align: right !important;
+}
+
+#refresh_info {
+	margin-top: 10px;
+}
+
+td:nth-child(1), th:nth-child(1) {
+	display: flex;
+}
