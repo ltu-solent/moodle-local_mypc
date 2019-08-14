@@ -7,9 +7,7 @@ function create_computers_table () {
   $url = 'https://mypc.solent.ac.uk/MyPC/Front.aspx?page=getResourceStatesAPI';
   $computers = json_decode(file_get_contents($url, true));
   $table = '
-  <div><table id="mypc_table"><tr>
-  <th class="mypc_location">' . $computers[1]->name . '</th>
-  <th class="mypc_availability">Availability</th></tr>';
+  <div><table id="mypc_table"><tr></tr>';
 
   foreach ($computers[1]->locations as $locations) {
     $total = 0;
@@ -19,7 +17,7 @@ function create_computers_table () {
       $total++;
       if ($resources->state == "AVAILABLE") {
         $available++;
-      } 
+      }
     }
 
     if ($available == 0) {
