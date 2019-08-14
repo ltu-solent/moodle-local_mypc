@@ -75,6 +75,10 @@ th.mypc_location {
 td {
   border-bottom: 1px solid black;
 }
+
+.unavailable {
+  background: #80808059;
+}
 </style>";
 echo $style;
 

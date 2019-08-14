@@ -14,15 +14,20 @@ function create_computers_table () {
   foreach ($computers[1]->locations as $locations) {
     $total = 0;
     $available = 0;
+    $class = '';
     foreach($locations->resources as $resources) {
       $total++;
       if ($resources->state == "AVAILABLE") {
         $available++;
-      }
+      } 
+    }
+
+    if ($available == 0) {
+      $class = 'class="unavailable"';
     }
 
     $table .=
-    '<tr>
+    '<tr '. $class . '>
       <td class="mypc_location">' . $locations->name . '</td>
       <td class="mypc_availability">' . $available . '/' . $total . '</td>
     </tr>';
