@@ -7,6 +7,7 @@ $jqscript = file_get_contents('https://code.jquery.com/jquery-3.4.1.min.js');
 echo "<script>".$jqscript."</script>";
 $script .= file_get_contents('js.js');
 echo "<script>".$script."</script>";
+echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">';
 $style = "    <style>
 .header { grid-area: header; }
 .computers { grid-area: menu; }
@@ -15,6 +16,7 @@ $style = "    <style>
 .footer { grid-area: footer; }
 
 .grid-container {
+  font-family: 'Open Sans', sans-serif;
   display: grid;
   grid-template-areas:
     'header header header header'
