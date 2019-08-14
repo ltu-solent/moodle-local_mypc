@@ -94,7 +94,7 @@ $grid = '    <div class="grid-container">
                 </div>
 
                 <div class="footer">
-                  Book online at mypc.solent.ac.uk or at any computer
+                  Log-in to any computer or book in advance at mypc.solent.ac.uk
                 </div>
             </div>
 ';
