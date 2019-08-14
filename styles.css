@@ -7,14 +7,6 @@
 	width: 100% !important;
 }
 
-th{
-  text-align: left !important;
-}
-
-th, td{
-  padding: 5px !important;
-}
-
 .spinner {
   font-size: 50px !important;
   margin-left: 45%;
@@ -27,22 +19,10 @@ th, td{
 	}
 }
 
-p{
-  padding: 5px 0 !important;
-}
-
-tr{
-  border-bottom: 1px solid #eee;
-}
-
 td.mypc_availability, th.mypc_availability{
   text-align: right !important;
 }
 
 #refresh_info {
 	margin-top: 10px;
-}
-
-td:nth-child(1), th:nth-child(1) {
-	display: flex;
 }
