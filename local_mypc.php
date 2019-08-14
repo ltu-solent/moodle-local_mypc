@@ -62,6 +62,7 @@ $style = "    <style>
 table#mypc_table {
   height: 750px;
   width: 100%;
+  border-collapse: collapse !important;
 }
 
 th.mypc_availability {
