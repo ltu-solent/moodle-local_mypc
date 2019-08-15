@@ -35,6 +35,7 @@ $style = "    <style>
   text-align: left;
   border-bottom: 2px solid black;
   font-size: 50px;
+  padding-bottom: 18px;
 }
 
 #refresh_info {
@@ -86,6 +87,11 @@ td {
 .unavailable {
   background:  #E0E0E0 ;
 }
+
+.solent-logo{
+  float: left;
+  padding-right: 30px;
+}
 </style>";
 echo $style;
 
@@ -93,7 +99,8 @@ $pcbooking = '<div id="computer_availability"></div>';
 
 $grid = '    <div class="grid-container">
                 <div class="header">
-                  Solent Library Computer Availability
+                  <div class="solent-logo"><img src="https://www.solent.ac.uk/site-elements/images/solent-university-logo.svg" alt="Solent logo" height="70px"></div>
+                  <div>Library Computer Availability</div>
                 </div>
                 <div class="computers">
                   ' . $pcbooking . '

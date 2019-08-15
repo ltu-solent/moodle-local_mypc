@@ -7,7 +7,7 @@ function create_computers_table () {
   $url = 'https://mypc.solent.ac.uk/MyPC/Front.aspx?page=getResourceStatesAPI';
   $computers = json_decode(file_get_contents($url, true));
   $table = '
-  <div><table id="mypc_table"><tr></tr>';
+  <table id="mypc_table"><tr></tr>';
 
   foreach ($computers[1]->locations as $locations) {
     $total = 0;
@@ -31,7 +31,7 @@ function create_computers_table () {
     </tr>';
   }
   $table .= '
-  </table></div>';
+  </table>';
   return $table;
 }
 
