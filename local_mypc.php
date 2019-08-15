@@ -9,21 +9,24 @@ $script .= file_get_contents('js.js');
 echo "<script>".$script."</script>";
 echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">';
 $style = "    <style>
-.header { grid-area: header; }
-.computers { grid-area: menu; }
-.info { grid-area: info1; }
-.info2 { grid-area: info2}
-.footer { grid-area: footer; }
+.header { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 4; grid-area: header; }
+.computers { -ms-grid-row: 2; -ms-grid-row-span: 2; -ms-grid-column: 1; -ms-grid-column-span: 3; grid-area: menu; }
+.info1 { -ms-grid-row: 2; -ms-grid-column: 4; grid-area: info1; }
+.info2 { -ms-grid-row: 3; -ms-grid-column: 4; grid-area: info2; }
+.footer { -ms-grid-row: 4; -ms-grid-column: 1; -ms-grid-column-span: 4; grid-area: footer; }
 
 .grid-container {
   font-family: 'Open Sans', sans-serif;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas:
+      grid-template-areas:
     'header header header header'
     'menu menu menu info1'
     'menu menu menu info2'
     'footer footer footer footer';
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: auto auto auto 400px;
+  -ms-grid-rows: auto 400px 400px auto;
   grid-template-rows: auto 400px 400px auto;
   padding: 10px;
 }
@@ -34,8 +37,9 @@ $style = "    <style>
   font-size: 50px;
 }
 
-.computers {
-  width
+#refresh_info {
+  font-size: 10px;
+  text-align: right;
 }
 
 .info1, .info2 {
@@ -47,6 +51,7 @@ $style = "    <style>
 
 .info1 p, .info2 p {
   margin-top: 33%;
+  font-size: 2vw;
 }
 
 .info1 {
@@ -63,6 +68,7 @@ table#mypc_table {
   height: 750px;
   width: 100%;
   border-collapse: collapse !important;
+  font-size: 2em;
 }
 
 th.mypc_availability {
@@ -78,17 +84,16 @@ td {
 }
 
 .unavailable {
-  background: #80808059;
+  background:  #E0E0E0 ;
 }
 </style>";
 echo $style;
 
-$pcbooking = '<div id="computer_availability">';
-$pcbooking .= '</div><p id="refresh_info">This table refreshes every 30 seconds</p>';
+$pcbooking = '<div id="computer_availability"></div>';
 
 $grid = '    <div class="grid-container">
                 <div class="header">
-                  SOLENT LIBRARY COMPUTERS
+                  Solent Library Computer Availability
                 </div>
                 <div class="computers">
                   ' . $pcbooking . '
