@@ -16,8 +16,6 @@ $(document).ready(function() {
   function getTable(){
     $.ajax({
       url: '../mypc/externallib.php',
-      type: 'post',
-      data: { "callTableFunc": "1"},
       success: function(response) {
         container.innerHTML= response;
       },
