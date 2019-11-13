@@ -72,11 +72,7 @@ table#mypc_table {
   font-size: 2em;
 }
 
-th.mypc_availability {
-  text-align: left;
-}
-
-th.mypc_location {
+th.mypc_availability, th.mypc_location, th.mypc_total {
   text-align: left;
 }
 
@@ -99,13 +95,13 @@ $pcbooking = '<div id="computer_availability"></div>';
 
 $grid = '    <div class="grid-container">
                 <div class="header">
-                  <div class="solent-logo"><img src="https://www.solent.ac.uk/site-elements/images/solent-university-logo.svg" alt="Solent logo" height="70px"></div>
+                  <div class="solent-logo"><img src="images/solent-university-logo.svg" alt="Solent logo" height="70px"></div>
                   <div>Library Computer Availability</div>
                 </div>
                 <div class="computers">
                   ' . $pcbooking . '
                 </div>
-                <div class="info1">
+                <!--<div class="info1">
                   <p>Almost 400 PCs and Macs</p>
                 </div>
                 <div class="info2">
@@ -114,7 +110,7 @@ $grid = '    <div class="grid-container">
 
                 <div class="footer">
                   Log-in to any computer or book in advance at mypc.solent.ac.uk
-                </div>
+                </div>-->
             </div>
 ';
 
