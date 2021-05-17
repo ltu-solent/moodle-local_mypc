@@ -1,0 +1,77 @@
+[
+ {
+   "name": "First Floor : Dual Monitors",
+   "id": 28,
+   "zone": "Quiet Study"
+ },
+ {
+   "name": "First Floor : Front (PCs)",
+   "id": 8,
+   "zone": "Quiet Study"
+ },
+ {
+   "name": "First Floor : Rear (PCs/Macs)",
+   "id": 14,
+   "zone": "Quiet Study"
+ },
+ {
+   "name": "Ground Floor : Front (PCs)",
+   "id": 21,
+   "zone": "Group Study"
+ },
+ {
+   "name": "Ground Floor : Quick Access",
+   "id": 27,
+   "zone": "Group Study"
+ },
+ {
+   "name": "Ground Floor : Rear (PCs & Macs)",
+   "id": 13,
+   "zone": "Silent Study"
+ },
+ {
+   "name": "Lower Ground Floor (Macs 01-28)",
+   "id": 12,
+   "zone": "Group Study"
+ },
+ {
+   "name": "Lower Ground Floor (Macs 29-36)",
+   "id": 29,
+   "zone": "Group Study"
+ },
+ {
+   "name": "Second Floor : Front (PCs)",
+   "id": 17,
+   "zone": "Group Study"
+ },
+ {
+   "name": "Second Floor : Rear (Macs 01-42)",
+   "id": 16,
+   "zone": "Group Study"
+ },
+ {
+   "name": "Second Floor : Rear (Macs 43-56)",
+   "id": 26,
+   "zone": "Group Study"
+ },
+ {
+   "name": "Second Floor : Rear (PCs)",
+   "id": 15,
+   "zone": "Group Study"
+ },
+ {
+   "name": "Second Floor : Rear (Specialist PCs)",
+   "id": 24,
+   "zone": "Group Study"
+ },
+ {
+   "name": "Third Floor : Group Area (PCs)",
+   "id": 23,
+   "zone": "Group Study"
+ },
+ {
+   "name": "Third Floor : Quiet Area (PCs)",
+   "id": 22,
+   "zone": "Quiet Study"
+ }
+]

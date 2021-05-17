@@ -5,7 +5,7 @@ $url = new moodle_url('/local/mypc/local_mypc.php');
 $PAGE->set_url($url);
 $jqscript = file_get_contents('https://code.jquery.com/jquery-3.4.1.min.js');
 echo "<script>".$jqscript."</script>";
-$script .= file_get_contents('js.js');
+$script = file_get_contents('js.js');
 echo "<script>".$script."</script>";
 echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">';
 $style = "    <style>
@@ -66,13 +66,13 @@ $style = "    <style>
 }
 
 table#mypc_table {
-  height: 750px;
+  height: 90%;
   width: 100%;
   border-collapse: collapse !important;
   font-size: 2em;
 }
 
-th.mypc_availability, th.mypc_location, th.mypc_total {
+th.mypc_availability, th.mypc_location, th.mypc_zone, th.mypc_total {
   text-align: left;
 }
 
