@@ -24,8 +24,9 @@
 
 defined('MOODLE_INTERNAL') || die;
 $settings = new admin_settingpage('local_mypc', new lang_string('pluginname', 'local_mypc'));
+if ($hassiteconfig) {
+    $link = '<a href="' . $CFG->wwwroot.'/local/mypc/local_mypc.php">' . get_string('pluginname', 'local_mypc') . '</a>';
+    $settings->add(new admin_setting_heading('local_mypc_link', '', $link));
 
-$link = '<a href="' . $CFG->wwwroot.'/local/mypc/local_mypc.php">' . get_string('pluginname', 'local_mypc') . '</a>';
-$settings->add(new admin_setting_heading('local_mypc_link', '', $link));
-
-$ADMIN->add('localplugins', $settings);
+    $ADMIN->add('localplugins', $settings);
+}
